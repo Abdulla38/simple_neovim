@@ -5,3 +5,4 @@ require("core.themes")
 require("core.mappings")
 
 -- Plugins
+require("plugins.neotree")
