@@ -11,6 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
+    -- Explorer
     {
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v3.x",
@@ -20,10 +21,22 @@ require("lazy").setup({
             "MunifTanjim/nui.nvim",
         },
     },
+       -- Theme
+    { "rebelot/kanagawa.nvim" },
+    -- Treesitter
+    { "nvim-treesitter/nvim-treesitter" },
     {
-        "catppuccin/nvim", 
-        name = "catppuccin", 
-        priority = 1000
+        -- LSP 
+        "neovim/nvim-lspconfig",
+        dependencies = {
+            -- Automatically install LSPs to stdpath for neovim
+            { 'williamboman/mason.nvim', config = true },
+            'williamboman/mason-lspconfig.nvim',
+            -- Useful status updates for LSP
+            -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
+            { 'j-hui/fidget.nvim', tag = 'legacy', opts = {} },
+            -- Additional lua configuration, makes nvim stuff amazing!
+            'folke/neodev.nvim',
+        },
     },
-    { "nvim-treesitter/nvim-treesitter" }
 })
