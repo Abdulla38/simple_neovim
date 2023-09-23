@@ -53,4 +53,9 @@ require('lazy').setup {
   },
   -- Formater
   { 'jose-elias-alvarez/null-ls.nvim' },
+  {
+    'nvim-telescope/telescope.nvim',
+    tag = '0.1.3',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+  },
 }
