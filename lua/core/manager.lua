@@ -62,4 +62,6 @@ require('lazy').setup {
   { 'windwp/nvim-autopairs' },
   -- Autotag
   { 'windwp/nvim-ts-autotag' },
+  -- Buffer line
+  { 'akinsho/bufferline.nvim', version = '*', dependencies = 'nvim-tree/nvim-web-devicons' },
 }
