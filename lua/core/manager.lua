@@ -60,4 +60,6 @@ require('lazy').setup {
   },
   -- Autopairs
   { 'windwp/nvim-autopairs' },
+  -- Autotag
+  { 'windwp/nvim-ts-autotag' },
 }
