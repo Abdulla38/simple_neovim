@@ -1,19 +1,19 @@
 local opt = vim.opt
 
 opt.autoindent = true
-opt.backspace = "indent,eol,start"
-opt.clipboard = "unnamedplus"
+opt.backspace = 'indent,eol,start'
+opt.clipboard = 'unnamedplus'
 opt.cursorline = true
-opt.encoding = "UTF-8"
-opt.expandtab= true
+opt.encoding = 'UTF-8'
+opt.expandtab = true
 opt.ignorecase = true
-opt.mouse = "a"
+opt.mouse = 'a'
 opt.mousefocus = true
 opt.number = true
 opt.relativenumber = true
 opt.shiftwidth = 4
-opt.showmode= true
-opt.signcolumn = "yes"
+opt.showmode = true
+opt.signcolumn = 'yes'
 opt.smartcase = true
 opt.smartindent = true
 opt.smarttab = true
